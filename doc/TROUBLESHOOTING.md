@@ -13,6 +13,10 @@ There are multiple ways to solve this issue. You can install bundler with elevat
 
     sudo gem install bundler
 
+If you encounter a permission issue again you could either change your GEM_HOME or use the `-n /usr/local/bin` option.
+
+    sudo gem install bundler -n /usr/local/bin
+
 If you cannot elevate your privileges or do not want to globally install Bundler, you can use the `--user-install` option.
 
     gem install bundler --user-install
